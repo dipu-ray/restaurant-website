@@ -28,34 +28,17 @@ body {
     margin: 0 auto;
 }
 
-.active {
-    color: var(--white-color);
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    position: relative;
-    display: inline-block;
-    transition: var(--animation);
+header {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
+        url('assets/background-images/hero-bg.png') center/cover no-repeat;
+    height: 100vh;
 }
 
-.active:hover {
-    color: var(--white-color);
-}
-
-.active::after {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    height: 1.5px;
-    width: 100%;
-    background-color: var(--orange-color);
-    transition: var(--animation);
-}
-
+/* Navbar */
 nav {
     background-color: rgba(26, 26, 26, 0.96);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 20px 0;
 }
 
@@ -94,13 +77,13 @@ nav {
 }
 
 .nav-links .nl-ul li .nl-btn {
+    position: relative;
+    display: inline-block;
     color: var(--gray-color);
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 1px;
-    position: relative;
-    display: inline-block;
     transition: var(--animation);
 }
 
@@ -123,6 +106,32 @@ nav {
     width: 100%;
 }
 
+.active {
+    position: relative;
+    display: inline-block;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: var(--animation);
+}
+
+.active:hover {
+    color: var(--white-color);
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 1.5px;
+    width: 100%;
+    background-color: var(--orange-color);
+    transition: var(--animation);
+}
+
 .nl-special-btn {
     color: var(--white-color);
     background-color: var(--orange-color);
@@ -137,4 +146,159 @@ nav {
 
 .nl-special-btn:hover {
     background-color: #dd843b;
+}
+
+/* Home or Hero Section */
+.home-section {
+    position: relative;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+}
+
+.home-section .hs-open-s {
+    position: relative;
+    color: var(--orange-color);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-left: 15px;
+}
+
+.home-section .hs-open-s::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 8px;
+    width: 8px;
+    background-color: var(--orange-color);
+    border-radius: 100%;
+    animation: pulse 2s ease-in-out .5s infinite alternate;
+}
+
+.home-section .hs-heading1 {
+    padding: 40px 0 25px;
+    font-size: 6rem;
+    font-family: var(--font-fancy);
+    width: 35%;
+    line-height: 4.8rem;
+}
+
+.home-section .hs-heading1 .hs-flavour-s {
+    color: var(--gray-color);
+    font-size: 4.4rem;
+    font-weight: 300;
+}
+
+.home-section .hs-heading1 .hs-flavour-s .hs-s-italic {
+    font-style: italic;
+}
+
+.home-section .hs-p {
+    font-size: 17px;
+    color: var(--gray-color);
+    width: 33%;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+.home-section .hs-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.home-section .hs-btns .hsb-reserve-btn {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: 16px 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: var(--animation);
+}
+
+.home-section .hs-btns .hsb-reserve-btn:hover {
+    box-shadow: 0 0 20px var(--orange-color);
+    transform: translateY(-2px);
+}
+
+.home-section .hs-btns .hsb-menu-btn {
+    border: 2px solid #ffffff3f;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: 16px 30px;
+    transition: var(--animation);
+}
+
+.home-section .hs-btns .hsb-menu-btn:hover {
+    border: 2px solid var(--gray-color);
+    background-color: #ffffff1f;
+    transform: translateY(-2px);
+}
+
+.home-section .hs-circle {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #c7712aaf;
+    border-radius: 100%;
+}
+
+.home-section .hs-circle .hs-mini-circle {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: #ffffff0a;
+    border: 1px solid #c7712a68;
+    border-radius: 100%;
+}
+
+.home-section .hs-circle .hs-mini-circle .hs-c-icon {
+    color: var(--orange-color);
+    font-family: var(--font-fancy);
+}
+
+.home-section .hs-circle .hs-mini-circle .hs-c-stars {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .6rem;
+    font-weight: 300px;
+    font-family: var(--font-regular);
+    color: var(--gray-color);
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        background-color: var(--orange-color);
+    }
+
+    50% {
+        background-color: #dd843b37;
+    }
+
+    100% {
+        background-color: var(--orange-color);
+    }
 }
