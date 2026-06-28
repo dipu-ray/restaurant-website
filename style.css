@@ -1,3 +1,140 @@
-h1 {
-    color: red;
+:root {
+    --font-regular: "Inter", sans-serif;
+    --font-fancy: "Playfair Display", serif;
+    --white-color: #ffffff;
+    --gray-color: #bbbbbb;
+    --dark-color: #1a1a1a;
+    --dark-color2: #1f1f1f;
+    --dark-color3: #262626;
+    --orange-color: #c7702a;
+    --animation: all ease .4s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: var(--font-regular);
+}
+
+/* Custom classes */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.active {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    transition: var(--animation);
+}
+
+.active:hover {
+    color: var(--white-color);
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 1.5px;
+    width: 100%;
+    background-color: var(--orange-color);
+    transition: var(--animation);
+}
+
+nav {
+    background-color: rgba(26, 26, 26, 0.96);
+    padding: 20px 0;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar Logo */
+.nav-logo .nl-link {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    font-family: var(--font-fancy);
+}
+
+.nav-logo .nl-link .nls-top {
+    color: var(--white-color);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-logo .nl-link .nls-bottom {
+    color: #c7712aac;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+/* Navbar Links */
+.nav-links .nl-ul {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links .nl-ul li .nl-btn {
+    color: var(--gray-color);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    transition: var(--animation);
+}
+
+.nav-links .nl-ul li .nl-btn:hover {
+    color: var(--white-color);
+}
+
+.nav-links .nl-ul li .nl-btn::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 1.5px;
+    width: 0%;
+    background-color: var(--orange-color);
+    transition: var(--animation);
+}
+
+.nav-links .nl-ul li .nl-btn:hover::after {
+    width: 100%;
+}
+
+.nl-special-btn {
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    text-transform: uppercase;
+    font-size: 12.4px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    padding: 8px 22px;
+    border-radius: 2px;
+    transition: var(--animation);
+}
+
+.nl-special-btn:hover {
+    background-color: #dd843b;
 }
