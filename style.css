@@ -2,7 +2,7 @@
     --font-regular: "Inter", sans-serif;
     --font-fancy: "Playfair Display", serif;
     --white-color: #ffffff;
-    --gray-color: #bbbbbb;
+    --gray-color: #868686;
     --dark-color: #1a1a1a;
     --dark-color2: #1f1f1f;
     --dark-color3: #262626;
@@ -424,7 +424,7 @@ nav {
     margin: 25px 0 25px;
 }
 
-.featured-content .fc-dash {
+.same-dash {
     width: 50px;
     height: 2px;
     background-color: var(--orange-color);
@@ -497,7 +497,7 @@ nav {
     justify-content: space-between;
 }
 
-.mhc-container .mhc-big {
+.same-heading {
     font-family: var(--font-fancy);
     color: var(--white-color);
     display: flex;
@@ -507,7 +507,7 @@ nav {
     line-height: 3.5rem;
 }
 
-.mhc-container .mhc-big .mhc-big-e {
+.same-heading .sh-e {
     color: #F5EFE0;
 }
 
@@ -621,7 +621,80 @@ nav {
 }
 
 /* Experience Section */
+.experience-section {
+    background-color: var(--dark-color);
+    padding: 150px 0 100px;
+}
 
+.experience-section .experience-container {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.exp-img-c {
+    width: 48%;
+}
+
+.exp-img-c .exp-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.exp-content {
+    width: 47%;
+}
+
+.exp-content .exp-heading-2 {
+    margin-bottom: 30px;
+}
+
+.exp-content .expc-p {
+    font-size: 1rem;
+    color: var(--gray-color);
+    line-height: 1.8rem;
+    width: 80%;
+}
+
+.expc-content {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.expc-content .expc-s-content {
+    display: flex;
+    gap: 20px;
+}
+
+.expc-sc-emoji {
+    background-color: #2e241c;
+    border: 1px solid #c8702a33;
+    border-radius: 5px;
+    padding: 0px 10px;
+    height: 45px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expc-sc-emoji .expc-sce {
+    font-size: 1.05rem;
+}
+
+.expc-sc-content .expc-scc-h4 {
+    color: var(--white-color);
+    font-family: var(--font-fancy);
+    font-size: 1rem;
+}
+
+.expc-sc-content .expc-scc-p {
+    color: var(--gray-color);
+    margin-top: 10px;
+    font-size: .9rem;
+    line-height: 1.5rem;
+}
 
 /* Animations */
 @keyframes pulse {
