@@ -6,7 +6,7 @@
     --gray-color: #868686;
     --dark-color: #1a1a1a;
     --dark-color2: #1f1f1f;
-    --dark-color3: #262626;
+    --dark-color3: #121212;
     --dark-color4: #242424;
     --orange-color: #c7702a;
     --animation: all ease .4s;
@@ -883,6 +883,181 @@ nav {
     background-color: #ffffff15;
     border: 1.5px solid #ffffffd3;
     transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color3);
+    color: var(--gray-color);
+    padding: 80px 0 40px;
+}
+
+/* Footer Main Section */
+.f-main-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.f-logo-container .flc-logo .flcl-h3 {
+    font-family: var(--font-fancy);
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+.f-logo-container .flc-logo .flcl-span {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: .65rem;
+    color: var(--orange-color);
+    margin-top: 10px;
+}
+
+.f-logo-container .flc-p {
+    margin: 20px 0 40px;
+    font-size: .85rem;
+    width: 70%;
+    line-height: 1.3rem;
+}
+
+.f-logo-container .flc-ul {
+    display: flex;
+    gap: 15px;
+}
+
+.f-logo-container .flc-ul li a {
+    font-size: 1.2rem;
+    color: var(--orange-color);
+    border: 1px solid #a64b0038;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    transition: var(--animation);
+}
+
+.f-logo-container .flc-ul li a:hover {
+    background-color: #a64b0038;
+    border: 1px solid var(--orange-color);
+}
+
+.fms-links {
+    padding-left: 160px;
+}
+
+.f-sm-h4 {
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: var(--white-color);
+    font-size: .65rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.fms-links .fmsl-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fms-links .fmsl-ul li a {
+    font-size: .85rem;
+    color: var(--gray-color);
+    transition: var(--animation);
+}
+
+.fms-links .fmsl-ul li a:hover {
+    color: var(--orange-color);
+}
+
+.fms-schedule {
+    padding-left: 100px;
+}
+
+.fms-schedule .fmss-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fms-schedule .fmss-container .fmssc-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fms-schedule .fmss-container .fmssc-content .fmsscc-day {
+    font-size: .8rem;
+}
+
+.fms-schedule .fmss-container .fmssc-content .fmsscc-time {
+    font-size: .85rem;
+    color: var(--white-color);
+}
+
+.fms-contact {
+    padding-left: 80px;
+}
+
+.fms-contact .fmsc-p {
+    font-size: .85rem;
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+.fms-contact .fmsc-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fms-contact .fmsc-links .fmscl-btn {
+    color: var(--gray-color);
+    font-size: .85rem;
+    transition: var(--animation);
+}
+
+.fms-contact .fmsc-links .fmscl-btn:hover {
+    color: var(--orange-color);
+}
+
+/* Footer Horizontal Bar */
+.f-horizontal-bar {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff10;
+    margin: 70px 0 30px;
+}
+
+/* Footer Bottom Section */
+.f-bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fbs-content .fbsc-p {
+    font-size: .8rem;
+}
+
+.fbs-content .fbsc-p .fbscp-span {
+    color: var(--orange-color);
+}
+
+.fbs-links .fbsl-ul {
+    display: flex;
+    gap: 25px;
+}
+
+.fbs-links .fbsl-ul li a {
+    color: var(--gray-color);
+    font-size: .75rem;
+    transition: var(--animation);
+}
+
+.fbs-links .fbsl-ul li a:hover {
+    color: var(--white-color);
 }
 
 /* Animations */
