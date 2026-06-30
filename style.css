@@ -30,12 +30,6 @@ body {
     margin: 0 auto;
 }
 
-.add-background-image {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
-        url('assets/background-images/hero-bg.png') center/cover no-repeat;
-    height: 100vh;
-}
-
 /* Navbar */
 nav {
     background-color: rgba(26, 26, 26, 0.96);
@@ -159,11 +153,13 @@ nav {
 /* Home or Hero Section */
 .home-section {
     position: relative;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
+        url('assets/home-images/hero-bg.png') center/cover no-repeat;
+    height: 100vh;
     color: var(--white-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 90vh;
 }
 
 .home-section .hs-open-s {
@@ -811,7 +807,7 @@ nav {
 /* CTA Section */
 .cta-section {
     background: linear-gradient(rgba(26, 26, 26, 0.78), rgba(26, 26, 26, 0.78)),
-        url('assets/background-images/cta-bg.png') center/cover;
+        url('assets/home-images/cta-bg.png') center/cover;
     padding: 100px 0;
     text-align: center;
 }
@@ -1059,6 +1055,50 @@ footer {
 .fbs-links .fbsl-ul li a:hover {
     color: var(--white-color);
 }
+
+
+
+
+
+/* Menu File CSS Codes */
+/* Main */
+/* Menu Hero Section */
+.menu-hero-section {
+    position: relative;
+}
+
+.mhs-bg-overlay {
+    background: linear-gradient(to top, rgba(26,26,26,1) 0%, rgba(26,26,26,0.4) 60%, transparent 100%), url('assets/menu-images/menu-home-bg.png') center/cover no-repeat;
+    height: 50vh;
+    z-index: 0;
+}
+
+.mhs-content-overlay {
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+    z-index: 1000;
+}
+
+.fancy-heading {
+    font-family: var(--font-fancy);
+    font-size: 4.5rem;
+    color: var(--white-color);
+    margin-top: 3px;
+}
+
+.fancy-heading .fh-span2 {
+    font-style: italic;
+    color: #F5EFE0;
+    font-weight: 400;
+}
+
+/* Menu & Tab Section */
+
+
+
+
+
 
 /* Animations */
 @keyframes pulse {
