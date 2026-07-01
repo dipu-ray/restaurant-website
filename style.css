@@ -1486,6 +1486,72 @@ footer {
     line-height: 1.4rem;
 }
 
+/* Values Section */
+.values-section {
+    background-color: var(--dark-color);
+    color: var(--gray-color);
+    padding: 120px 0 90px;
+}
+
+.vc-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vct-h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3.3rem;
+    margin-top: 18px;
+    line-height: 3.8rem;
+}
+
+.vct-h2 .vcth-span2 {
+    font-weight: 600;
+}
+
+.vc-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.vcc-card {
+    border: 1px solid #ffffff15;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 15px;
+    transition: var(--animation);
+}
+
+.vcc-card:hover {
+    background-color: #9e5c2512;
+    border: 1px solid var(--orange-color);
+    transform: translateY(-5px);
+}
+
+.vcc-card .vccc-h3 {
+    font-family: var(--font-fancy);
+    font-size: 3.5rem;
+    -webkit-text-stroke: 1px var(--orange-color);
+    color: var(--dark-color);
+}
+
+.vcc-card .vccc-h5 {
+    font-family: var(--font-fancy);
+    font-size: 1.05rem;
+    color: var(--white-color);
+    margin-bottom: 10px;
+}
+
+.vcc-card .vccc-p {
+    font-size: .85rem;
+    line-height: 1.3rem;
+}
+
 
 
 
