@@ -1552,6 +1552,69 @@ footer {
     line-height: 1.3rem;
 }
 
+/* Press Section */
+.press-section {
+    background-color: var(--dark-color4);
+    color: var(--gray-color);
+    padding: 90px 0 80px;
+}
+
+.pc-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pct-h2 {
+    font-family: var(--font-fancy);
+    font-size: 3.2rem;
+    color: var(--white-color);
+    margin-top: 15px;
+}
+
+.pct-h2 .pcth-span2 {
+    font-style: italic;
+    color: #F5EFE0;
+}
+
+.pc-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+}
+
+.pcb-card {
+    text-align: center;
+    padding: 30px 20px;
+    transition: var(--animation);
+}
+
+.pcb-card:hover {
+    background-color: #ffffff10;
+}
+
+.pcb-card:nth-child(1) {
+    border: 1px solid #ffffff15;
+}
+
+.pcb-card:nth-child(2),
+.pcb-card:nth-child(3),
+.pcb-card:nth-child(4) {
+    border-top: 1px solid #ffffff15;
+    border-bottom: 1px solid #ffffff15;
+    border-right: 1px solid #ffffff15;
+}
+
+.pcb-card .pcbc-h3 {
+    font-family: var(--font-fancy);
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.pcb-card .pcbc-p {
+    font-size: .8rem;
+}
+
 
 
 
