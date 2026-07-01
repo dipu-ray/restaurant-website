@@ -1165,6 +1165,254 @@ footer {
     line-height: 1.5rem;
 }
 
+.mtscc-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+}
+
+.mtscci-card {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    transition: var(--animation);
+}
+
+.mtscci-card:hover {
+    background-color: #ffffff05;
+}
+
+.mtscci-card:nth-child(odd) {
+    border-right: 1px solid #ffffff15;
+}
+
+.mtscci-card:nth-child(3),
+.mtscci-card:nth-child(4) {
+    border-top: 1px solid #ffffff15;
+    border-bottom: 1px solid #ffffff15;
+}
+
+.mtsccic-content .mtsccicc-h4 {
+    font-family: var(--font-fancy);
+    color: var(--white-color);
+    font-size: 1.1rem;
+}
+
+.mtsccic-content .mtsccicc-p {
+    font-size: .85rem;
+    margin: 10px 0;
+    line-height: 1.2rem;
+}
+
+.mtsccic-content .mtsccicc-span {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: .6rem;
+    font-weight: bold;
+    color: var(--orange-color);
+    background-color: #a64b0034;
+    padding: 4px 6px;
+}
+
+.mtsccic-price .mtsccicp-span {
+    font-family: var(--font-fancy);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--orange-color);
+}
+
+/* Wine Section */
+.wine-section {
+    background-color: var(--dark-color4);
+    color: var(--gray-color);
+    padding: 90px 0 80px;
+}
+
+.wc-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wc-heading .wch-h2 {
+    font-family: var(--font-fancy);
+    font-size: 3.2rem;
+    color: var(--white-color);
+    margin: 20px 0;
+}
+
+.wc-heading .wch-h2 .wchh-span2 {
+    font-style: italic;
+    color: #F5EFE0;
+}
+
+.wc-heading .wch-p {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+.wc-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.wcc-inner-card {
+    text-align: center;
+    background-color: #2b2b2b;
+    border: 1px solid #ffffff15;
+    border-radius: 10px;
+    padding: 35px;
+    transition: var(--animation);
+}
+
+.wcc-inner-card:hover {
+    border: 1px solid #a64b0068;
+}
+
+.wcc-inner-card .wccic-span-icon {
+    font-size: 2rem;
+}
+
+.wcc-inner-card .wccic-h4 {
+    font-family: var(--font-fancy);
+    font-size: 1rem;
+    color: var(--white-color);
+    margin: 20px 0 6px;
+}
+
+.wcc-inner-card .wccic-span-location {
+    color: var(--orange-color);
+    font-size: .75rem;
+}
+
+.wcc-inner-card .wccic-p {
+    margin: 15px 0;
+    font-size: .8rem;
+}
+
+.wcc-inner-card .wccic-p-dollar {
+    font-family: var(--font-fancy);
+    color: #C9A84C;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+/* Menu File CSS Codes */
+/* Main */
+/* Menu Hero Section */
+.mhs-bg-overlay2 {
+    background: linear-gradient(to top, rgba(26, 26, 26, 1) 0%, rgba(26, 26, 26, 0.4) 60%, transparent 100%), url('assets/our-story-images/our-story-home-bg.png') center/cover no-repeat;
+    height: 50vh;
+    z-index: 0;
+}
+
+/* Story Section */
+.story-section {
+    background-color: var(--dark-color);
+    color: var(--gray-color);
+    padding: 120px 0;
+}
+
+.story-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.sc-img-container {
+    width: 125%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+}
+
+.scic-1 {
+    width: 100%;
+}
+
+.scic-1 .scic-img1 {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.scic-2 {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.scic-2 .scic-img2 {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sc-content .scc-h2 {
+    font-family: var(--font-fancy);
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 24px;
+}
+
+.sc-content .scc-h2 .scch-span1 {
+    color: var(--white-color);
+}
+
+.sc-content .scc-h2 .scch-span2 {
+    color: #F5EFE0;
+    font-style: italic;
+}
+
+.sc-content .scc-p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    width: 80%;
+}
+
+.scc-special-p {
+    background-color: #c8702a0f;
+    color: #ffffffdf;
+    margin: 30px 0;
+    padding: 33px 30px;
+    border-left: 3px solid var(--orange-color);
+}
+
+.scc-special-p .sccsp-p {
+    font-family: var(--font-accent);
+    font-size: 1.45rem;
+    font-style: italic;
+    line-height: 2.2rem;
+}
+
+.sc-content .scc-h3 {
+    color: var(--orange-color);
+    font-family: var(--font-accent);
+    font-style: italic;
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin: 10px 0 0;
+}
+
+.sc-content .scc-span {
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    font-size: .7rem;
+    font-weight: 600;
+}
+
 
 
 
