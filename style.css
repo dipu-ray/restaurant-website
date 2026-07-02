@@ -1733,6 +1733,91 @@ footer {
 
 .clc-right {
     width: 50%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.clc-right .clcr-card1 {
+    background-color: var(--dark-color4);
+    border: 1px solid #ffffff15;
+    border-radius: 10px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.clc-right .clcr-card1 .clcrco-span {
+    font-size: 3rem;
+}
+
+.clc-right .clcr-card1 .clcrco-h4 {
+    font-family: var(--font-fancy);
+    font-size: 1.2rem;
+    color: #F5EFE0;
+    margin: 25px 0 10px;
+}
+
+.clc-right .clcr-card1 .clcrco-p {
+    font-size: .85rem;
+    line-height: 1.4rem;
+}
+
+.clc-right .clcr-card1 .clcrco-btn {
+    color: #F5EFE0;
+    border: 2px solid #f5efe047;
+    padding: 12px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: .7rem;
+    font-weight: 600;
+    margin-top: 24px;
+    transition: var(--animation);
+}
+
+.clc-right .clcr-card1 .clcrco-btn:hover {
+    border: 2px solid var(--white-color);
+    background-color: rgba(255, 255, 255, 0.057);
+    transform: translateY(-3px);
+}
+
+.clc-right .clcr-card2 {
+    background-color: #241f1a;
+    border: 1px solid #a64b0055;
+    border-radius: 10px;
+    padding: 40px 33px;
+}
+
+.clc-right .clcr-card2 .clcrct-h4 {
+    font-family: var(--font-fancy);
+    font-size: 1.4rem;
+    color: var(--white-color);
+    margin: 12px 0;
+}
+
+.clc-right .clcr-card2 .clcrct-p {
+    font-size: .85rem;
+    line-height: 1.4rem;
+}
+
+.clc-right .clcr-card2 .clcrct-btn {
+    display: inline-block;
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    padding: 18px 33px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: .75rem;
+    font-weight: 600;
+    border-radius: 2px;
+    transition: var(--animation);
+}
+
+.clc-right .clcr-card2 .clcrct-btn:hover {
+    box-shadow: 0 0 30px #c870288e;
+    transform: translateY(-3px);
 }
 
 
