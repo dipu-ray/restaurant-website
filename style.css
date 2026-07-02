@@ -1305,9 +1305,9 @@ footer {
 
 
 
-/* Menu File CSS Codes */
+/* Our Story File CSS Codes */
 /* Main */
-/* Menu Hero Section */
+/* Our Story Hero Section */
 .mhs-bg-overlay2 {
     background: linear-gradient(to top, rgba(26, 26, 26, 1) 0%, rgba(26, 26, 26, 0.4) 60%, transparent 100%), url('assets/our-story-images/our-story-home-bg.png') center/cover no-repeat;
     height: 50vh;
@@ -1613,6 +1613,31 @@ footer {
 
 .pcb-card .pcbc-p {
     font-size: .8rem;
+}
+
+
+
+
+
+/* Contact File CSS Codes */
+/* Main */
+/* Contact Hero Section */
+.cuhs-bg-overlay {
+    background: linear-gradient(to top, rgba(26, 26, 26, 1) 0%, rgba(26, 26, 26, 0.4) 60%, transparent 100%), url('assets/contact-images/contact-hero-bg.png') center/cover no-repeat;
+    height: 35vh;
+    z-index: 0;
+}
+
+.cuhs-span1 {
+    color: #F5EFE0;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.cuhs-span2 {
+    color: var(--white-color);
+    font-style: normal !important;
+    font-weight: 600 !important;
 }
 
 
